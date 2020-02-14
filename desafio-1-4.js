@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Operações bancárias
 
 const user = {
@@ -19,6 +20,28 @@ function createTransaction(transaction) {
 
 // Relatórios
 function getHigherTransactionByType(type) {
+=======
+// ===========================================================
+// ******************  OPERAÇÕES BANCÁRIAS  ******************
+// ===========================================================
+
+const user = {
+    name: "Mariana",
+    transactions: [],
+    balance: 0
+};
+
+function createTransaction(transaction){
+    user.balance.push(transaction);
+    if(transaction.type === 'credit'){
+        user.balance = user.balance + user.balance.value
+    } else {
+        user.balance = user.balance - user.balance.value
+    }
+};
+
+function getHigherTransactionByType(transactions){
+>>>>>>> 103e38f164d761b4681eda6ab17e1a4ba19ffadc
     let higherTransaction
     let higherValue = 0
 
